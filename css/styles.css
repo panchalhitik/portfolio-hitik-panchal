@@ -354,17 +354,46 @@ body {
 
 .edu { margin-top: 64px; display: grid; gap: 16px; }
 .edu__item {
-  display: flex; gap: 18px; align-items: center;
+  display: flex; gap: 18px; align-items: center; flex-wrap: wrap;
   background: var(--bg-card); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 20px 24px; transition: border-color 0.3s, transform 0.3s;
 }
 .edu__item:hover { border-color: rgba(78, 240, 192, 0.3); transform: translateX(6px); }
 .edu__icon { font-size: 1.6rem; }
+.edu__body { flex: 1; min-width: 240px; }
 .edu__item h3 { font-family: var(--font-display); font-size: 1.02rem; font-weight: 600; }
-.edu__item p { color: var(--text-dim); font-size: 0.78rem; margin-top: 2px; }
+.edu__item p { color: var(--text-dim); font-size: 0.86rem; margin-top: 4px; }
+.edu__body .tags { margin-top: 10px; }
+.edu__date { font-size: 0.78rem; color: var(--accent); }
+.hl { color: var(--text); font-weight: 500; }
+
+/* grade badge on the side */
+.edu__grade {
+  text-align: center; min-width: 96px;
+  padding: 6px 0 6px 22px; border-left: 1px solid var(--line);
+}
+.edu__grade-num {
+  display: block; font-family: var(--font-display); font-weight: 700;
+  font-size: 1.9rem; line-height: 1.1;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.edu__grade-num small { font-size: 0.55em; font-weight: 600; }
+.edu__grade-label {
+  display: block; font-family: var(--font-mono); font-size: 0.62rem;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-dim); margin-top: 2px;
+}
 
 /* ============ CONTACT ============ */
 .contact { text-align: center; }
+.contact__kicker {
+  display: flex; align-items: center; justify-content: center; gap: 16px;
+  font-family: var(--font-display); font-weight: 600; font-size: 1.05rem; color: var(--text);
+}
+.contact__kicker::before, .contact__kicker::after {
+  content: ""; height: 1px; width: min(110px, 18vw); background: var(--line);
+}
+.contact__kicker .section__num { font-size: 0.8rem; }
 .contact__title { font-family: var(--font-display); font-size: clamp(2.2rem, 6vw, 3.8rem); font-weight: 700; margin: 12px 0 18px; letter-spacing: -0.02em; }
 .contact__sub { color: var(--text-dim); max-width: 540px; margin: 0 auto 38px; }
 .contact__links { display: flex; justify-content: center; gap: 28px; margin-top: 44px; flex-wrap: wrap; }
