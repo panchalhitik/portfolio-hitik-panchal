@@ -347,6 +347,8 @@ body {
   border-bottom: 1px dashed transparent; transition: border-color 0.25s;
 }
 .card__link:hover { border-bottom-color: var(--accent); }
+.card__links { display: flex; gap: 20px; margin-top: 16px; }
+.card__links .card__link { margin-top: 0; }
 
 /* ============ SKILLS ============ */
 .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 30px 44px; }
