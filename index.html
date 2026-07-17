@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hitik Panchal | AI/ML Engineer & Software Developer</title>
+  <meta name="description" content="Portfolio of Hitik Panchal, M.Sc. Computer Science student at Universität Bonn. AI/ML, NLP, and backend engineering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo mono">HP<span class="accent">.</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about" data-section="about">About</a>
+      <a href="#experience" data-section="experience">Experience</a>
+      <a href="#projects" data-section="projects">Projects</a>
+      <a href="#skills" data-section="skills">Skills</a>
+      <a href="#contact" data-section="contact">Contact</a>
+    </nav>
+    <a class="btn btn--small magnetic" href="assets/Hitik_Panchal_Resume.pdf" download>Résumé ↓</a>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__blobs" aria-hidden="true">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+        <div class="blob blob--3"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__hello mono reveal">Hi, I'm</p>
+        <h1 class="hero__name">
+          <span class="hero__line"><span>Hitik</span></span>
+          <span class="hero__line hero__line--accent"><span>Panchal</span></span>
+        </h1>
+        <p class="hero__role reveal">
+          I build <span class="typewriter" id="typewriter"></span><span class="caret">|</span>
+        </p>
+        <p class="hero__tagline reveal">
+          <strong>M.Sc. Computer Science @ Universität Bonn</strong> ·
+          <strong>1.5 yrs</strong> handling high-risk clearing systems at the
+          <strong>National Stock Exchange of India</strong>.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#projects" class="btn btn--primary magnetic">See my work</a>
+          <a href="#contact" class="btn magnetic">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="hero__portrait" id="heroPhotoAnchor">
+        <img src="assets/caricature.jpg" alt="Pixel-art caricature of Hitik Panchal" id="portraitImg" />
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <div class="hero__scroll-dot"></div>
+        <span class="mono">scroll</span>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <h2 class="section__title reveal"><span class="mono section__num">01</span> About me</h2>
+      <div class="about">
+        <div class="about__text reveal">
+          <p>
+            Here's how my brain works: if something feels like a hassle, or the tool I want
+            simply doesn't exist, <strong>I code it into existence</strong>. I enjoy taking a problem
+            apart, understanding it properly, and building something clean and reliable in its
+            place. Problems don't get to stay problems for long around me.
+          </p>
+          <p>
+            Professionally, I spent <strong>1.5 years at NSEIT</strong> engineering high-stakes clearing
+            systems for the <strong>National Stock Exchange of India</strong>: architecting a
+            monolith-to-REST migration, leading delivery of a core clearing module, and mentoring
+            junior developers. In an environment where markets are watching, I learned to build
+            for reliability first and treat production like it deserves respect.
+          </p>
+          <p>
+            Academically, I'm a Computer Science Master's student at <strong>Universität Bonn</strong>
+            (Grade: 1.7), specialising in <strong>Machine Learning, NLP and Large Language Models</strong>,
+            from LoRA fine-tuning transformer models to building multilingual classifiers
+            with RoBERTa and LLaMA.
+          </p>
+          <p>
+            And when I'm not coding? I'm watching football (<strong>huge Manchester United fan</strong> 🔴),
+            travelling, or gaming, especially <strong>Football Manager</strong>, where I take
+            squad-building far too seriously.
+          </p>
+        </div>
+        <div class="about__side reveal">
+          <div class="about__photo" id="photoSlot">
+            <img src="assets/photo-capri.jpg" alt="Hitik Panchal in Capri" />
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <h2 class="section__title reveal"><span class="mono section__num">02</span> Where I've worked</h2>
+      <div class="timeline">
+        <article class="tl-item reveal">
+          <div class="tl-item__dot"></div>
+          <p class="tl-item__date mono">May 2023 - Feb 2024 · Mumbai, IN</p>
+          <h3 class="tl-item__role">Associate System Analyst · <span class="accent">NSEIT</span></h3>
+          <ul class="tl-item__points">
+            <li><strong>Project lead</strong> for the NCMS CM module: delivery planning, stakeholder comms, release coordination. Mentored 2 junior devs.</li>
+            <li>Architected the migration of NSE's Clearing Management System from a Spring Boot monolith to a REST API architecture: <strong>~20% higher throughput</strong>, sustaining 20,000+ trades/minute in live clearing.</li>
+            <li>Hunted down backend bottlenecks; DB query refactoring cut database load by ~10% and killed several production bugs.</li>
+          </ul>
+          <div class="tags"><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>REST APIs</span><span>Linux</span></div>
+        </article>
+
+        <article class="tl-item reveal">
+          <div class="tl-item__dot"></div>
+          <p class="tl-item__date mono">Nov 2022 - May 2023 · Mumbai, IN</p>
+          <h3 class="tl-item__role">Trainee Associate System Analyst · <span class="accent">NSEIT</span></h3>
+          <ul class="tl-item__points">
+            <li>Executed production deployments on Linux for a platform serving <strong>100,000+ end users</strong>, with near-zero downtime across every release cycle.</li>
+            <li>Led the Git migration of 10+ legacy codebases, standardising version control for the whole team.</li>
+          </ul>
+          <div class="tags"><span>Java</span><span>SQL</span><span>Linux</span><span>Git</span></div>
+        </article>
+
+        <article class="tl-item reveal">
+          <div class="tl-item__dot"></div>
+          <p class="tl-item__date mono">Aug 2022 - Oct 2022 · Navi Mumbai, IN</p>
+          <h3 class="tl-item__role">Data Science Intern · <span class="accent">Dezignolics</span></h3>
+          <ul class="tl-item__points">
+            <li>Built an end-to-end churn prediction pipeline on <strong>200,000+ subscription records</strong>; risk scores surfaced via Tableau dashboards adopted by the marketing team.</li>
+          </ul>
+          <div class="tags"><span>Python</span><span>scikit-learn</span><span>Tableau</span><span>ETL</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section--wide" id="projects">
+      <h2 class="section__title reveal"><span class="mono section__num">03</span> Things I've built</h2>
+
+      <!-- Featured: live deployed projects -->
+      <article class="feature reveal">
+        <div class="feature__preview">
+          <div class="browser-frame">
+            <div class="browser-frame__bar">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+              <span class="browser-frame__url mono">26-27-football-season-simulator.vercel.app</span>
+            </div>
+            <div class="browser-frame__body" data-src="https://26-27-football-season-simulator.vercel.app" data-fallback="assets/preview-football.png">
+              <button class="browser-frame__load btn btn--small">▶ Load live preview</button>
+            </div>
+          </div>
+        </div>
+        <div class="feature__info">
+          <p class="feature__label mono">Featured · Live</p>
+          <h3 class="feature__title">26/27 Football Season Simulator</h3>
+          <p class="feature__desc">
+            A full browser-based football management sim: transfers, squad building, and complete
+            38-match seasons for 12 European clubs with <strong>~3,500 real players</strong>. Matches are decided by a
+            Dixon-Coles + Monte Carlo engine with full domestic &amp; European cup competitions, all running
+            client-side on seeded PRNGs.
+          </p>
+          <div class="tags"><span>React</span><span>TypeScript</span><span>Zustand</span><span>Web Workers</span><span>Tailwind</span></div>
+          <div class="feature__links">
+            <a class="btn btn--primary btn--small magnetic" href="https://26-27-football-season-simulator.vercel.app" target="_blank" rel="noopener">Play it live ↗</a>
+            <a class="btn btn--small magnetic" href="https://github.com/panchalhitik" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature feature--flip reveal">
+        <div class="feature__preview">
+          <div class="browser-frame">
+            <div class="browser-frame__bar">
+              <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+              <span class="browser-frame__url mono">got-you-covered-cv.vercel.app</span>
+            </div>
+            <div class="browser-frame__body" data-src="https://got-you-covered-cv.vercel.app" data-fallback="assets/preview-gyc.png">
+              <button class="browser-frame__load btn btn--small">▶ Load live preview</button>
+            </div>
+          </div>
+        </div>
+        <div class="feature__info">
+          <p class="feature__label mono">Featured · Live</p>
+          <h3 class="feature__title">Got You CoVered: AI Cover Letter Generator</h3>
+          <p class="feature__desc">
+            Full-stack app that turns your résumé + a job description into a tailored one-page cover letter
+            using the <strong>Anthropic Claude API</strong>, with tone/length controls, a reference letter to mimic
+            your voice, in-place editing, and one-click .docx/.pdf export. All user data stays client-side.
+          </p>
+          <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Claude API</span><span>Tailwind</span><span>Vercel</span></div>
+          <div class="feature__links">
+            <a class="btn btn--primary btn--small magnetic" href="https://got-you-covered-cv.vercel.app" target="_blank" rel="noopener">Try it live ↗</a>
+            <a class="btn btn--small magnetic" href="https://github.com/panchalhitik" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Other projects grid -->
+      <div class="grid">
+        <article class="card reveal tilt">
+          <div class="card__top">
+            <span class="card__icon">🧭</span>
+            <span class="card__type mono">Research</span>
+          </div>
+          <h3 class="card__title">Value Alignment via LoRA Fine-Tuning</h3>
+          <p class="card__desc">Studied how domain-specific pretraining shifts value orientations of Qwen3 models (0.6B-8B) using LoRA on subsets of The Pile, evaluated against the Schwartz value survey. Found smaller-model shifts were driven by output homogenisation, not real value acquisition.</p>
+          <div class="tags"><span>PyTorch</span><span>Qwen3</span><span>LoRA/PEFT</span><span>Hugging Face</span></div>
+          <a class="card__link mono" href="https://github.com/panchalhitik" target="_blank" rel="noopener">GitHub ↗</a>
+        </article>
+
+        <article class="card reveal tilt">
+          <div class="card__top">
+            <span class="card__icon">📰</span>
+            <span class="card__type mono">Research</span>
+          </div>
+          <h3 class="card__title">Multilingual Narrative Classification</h3>
+          <p class="card__desc">Propaganda &amp; narrative detection for English/Russian news: dual-head RoBERTa multi-label classifier with LLaMA-3.1-8B refinement for low-resource classes. <strong>85% multi-label accuracy</strong>, ~18pp above baseline.</p>
+          <div class="tags"><span>PyTorch</span><span>RoBERTa</span><span>LLaMA-3.1</span><span>NLP</span></div>
+          <a class="card__link mono" href="https://github.com/panchalhitik" target="_blank" rel="noopener">GitHub ↗</a>
+        </article>
+
+        <article class="card reveal tilt">
+          <div class="card__top">
+            <span class="card__icon">📊</span>
+            <span class="card__type mono">Tooling</span>
+          </div>
+          <h3 class="card__title">AI-Assisted Agile Planning Dashboard</h3>
+          <p class="card__desc">Analyses Jira-style sprint data (epics, capacity, dependencies, delivery risk) and generates AI-assisted planning summaries and leadership reports from raw project data.</p>
+          <div class="tags"><span>Python</span><span>Streamlit</span><span>Pandas</span><span>Prompt Engineering</span></div>
+          <a class="card__link mono" href="https://github.com/panchalhitik" target="_blank" rel="noopener">GitHub ↗</a>
+        </article>
+
+        <article class="card reveal tilt">
+          <div class="card__top">
+            <span class="card__icon">📈</span>
+            <span class="card__type mono">Analytics</span>
+          </div>
+          <h3 class="card__title">Financial Portfolio Analysis Dashboard</h3>
+          <p class="card__desc">Tableau dashboard comparing performance across equities, bonds and ETFs from Yahoo Finance history, with dynamic filters and side-by-side risk/return analysis.</p>
+          <div class="tags"><span>Tableau</span><span>Python</span><span>Yahoo Finance API</span></div>
+          <a class="card__link mono" href="https://github.com/panchalhitik" target="_blank" rel="noopener">GitHub ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <h2 class="section__title reveal"><span class="mono section__num">04</span> Toolbox</h2>
+      <div class="skills reveal">
+        <div class="skills__group">
+          <h3 class="mono">Languages</h3>
+          <div class="tags tags--big"><span>Python</span><span>Java</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span><span>C/C++</span><span>R</span><span>Shell</span></div>
+        </div>
+        <div class="skills__group">
+          <h3 class="mono">ML / NLP</h3>
+          <div class="tags tags--big"><span>PyTorch</span><span>TensorFlow</span><span>Hugging Face</span><span>LoRA (PEFT)</span><span>scikit-learn</span><span>Transformers</span></div>
+        </div>
+        <div class="skills__group">
+          <h3 class="mono">AI Engineering</h3>
+          <div class="tags tags--big"><span>Claude Code</span><span>Anthropic Claude API</span><span>RAG Pipelines</span><span>AI Agents</span><span>MCP</span><span>Vector DBs (FAISS · Chroma)</span><span>Embeddings</span><span>LangChain</span><span>Prompt Engineering</span></div>
+        </div>
+        <div class="skills__group">
+          <h3 class="mono">Backend &amp; APIs</h3>
+          <div class="tags tags--big"><span>Spring Boot</span><span>REST APIs</span><span>MySQL</span><span>MongoDB</span><span>Firebase</span><span>Docker</span></div>
+        </div>
+        <div class="skills__group">
+          <h3 class="mono">Data &amp; Viz</h3>
+          <div class="tags tags--big"><span>Pandas</span><span>NumPy</span><span>Tableau</span><span>Power BI</span><span>Streamlit</span></div>
+        </div>
+      </div>
+
+      <div class="edu reveal">
+        <div class="edu__item">
+          <span class="edu__icon">🎓</span>
+          <div>
+            <h3>M.Sc. Computer Science · Universität Bonn</h3>
+            <p class="mono">2024 - present · Grade 1.7 · ML, NLP &amp; LLMs</p>
+          </div>
+        </div>
+        <div class="edu__item">
+          <span class="edu__icon">🎓</span>
+          <div>
+            <h3>B.E. Computer Engineering · Mumbai University</h3>
+            <p class="mono">2018 - 2022 · CGPA 9.76/10 · thesis: real-time crowd density estimation (CNN, ~90% acc.)</p>
+          </div>
+        </div>
+        <div class="edu__item">
+          <span class="edu__icon">📜</span>
+          <div>
+            <h3>Certifications</h3>
+            <p class="mono">Google Data Analytics · IBM Data Science · Google BI · Tableau (UC Davis)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <p class="mono reveal accent">05 · What's next?</p>
+      <h2 class="contact__title reveal">Let's build something.</h2>
+      <p class="contact__sub reveal">
+        I'm always up for exciting opportunities and a good team to join, create and build
+        with. If that sounds like yours, my inbox is open. Based in Köln, Germany.
+      </p>
+      <a class="btn btn--primary btn--big magnetic reveal" href="https://mail.google.com/mail/?view=cm&fs=1&to=panchalhitik27@gmail.com&su=Hello%20Hitik" target="_blank" rel="noopener">Say hello 👋</a>
+      <div class="contact__links reveal">
+        <a href="https://github.com/panchalhitik" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/hitikp/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/panchalhitik" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=panchalhitik27@gmail.com" target="_blank" rel="noopener">panchalhitik27@gmail.com</a>
+        <a href="tel:+4917627006558">+49 176 2700 6558</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>© 2026 Hitik Panchal · designed &amp; built with too much coffee ☕</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
