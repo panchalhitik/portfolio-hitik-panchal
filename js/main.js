@@ -237,7 +237,9 @@ document.querySelectorAll(".browser-frame__body").forEach((body) => {
   }
 
   if (btn) {
+    body.classList.add("is-idle"); // enables the scrim behind the load button
     btn.addEventListener("click", () => {
+      body.classList.remove("is-idle");
       const iframe = document.createElement("iframe");
       iframe.src = src;
       iframe.loading = "lazy";
